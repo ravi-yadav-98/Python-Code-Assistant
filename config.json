@@ -1,0 +1,11 @@
+{
+    "llm_config": [
+        {
+            "model": "gemma-7b-it",
+            "base_url": "https://api.groq.com/openai/v1",
+            "api_key": "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",
+            "seed": null
+        }
+    ],
+    "seed": null
+}
