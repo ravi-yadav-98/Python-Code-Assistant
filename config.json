@@ -3,7 +3,7 @@
         {
             "model": "gemma-7b-it",
             "base_url": "https://api.groq.com/openai/v1",
-            "api_key": "",
+            "api_key": "XXXXXXXXXXXXXXXXX",
             "seed": null
         }
     ],
