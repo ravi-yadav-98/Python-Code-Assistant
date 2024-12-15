@@ -3,9 +3,9 @@
 # Path to your virtual environment's activation script
 VENV_PATH="venv/Scripts/activate"
 
-# Function to log messages with timestamps
+# Function to log messages
 log_message() {
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1"
+    echo "- $1"
 }
 
 # Check if Git is installed
@@ -41,8 +41,8 @@ else
     exit 1  # Exit if the git add fails
 fi
 
-# Step 4: Commit changes with a timestamp
-COMMIT_MESSAGE="Automated commit - $(date '+%Y-%m-%d %H:%M:%S')"
+# Step 4: Commit changes with a plain message
+COMMIT_MESSAGE="Automated commit"
 log_message "Committing changes with message: '$COMMIT_MESSAGE'..."
 if git commit -m "$COMMIT_MESSAGE"; then
     log_message "Changes committed successfully."
