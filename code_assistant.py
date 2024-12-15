@@ -27,4 +27,4 @@ chat_result = code_executor_agent.initiate_chat(
 )
 
 save_chat_history(chat_result, "log.txt")
-pprint.pprint(chat_result)
+# pprint.pprint(chat_result)
