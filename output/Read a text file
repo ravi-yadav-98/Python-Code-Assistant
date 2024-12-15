@@ -1,0 +1,8 @@
+# Read a text file
+def read_file(filename):
+    try:
+        with open(filename, 'r') as file:
+            contents = file.readlines()
+            return '\n'.join(contents)
+    except FileNotFoundError:
+        print("File not found.")
